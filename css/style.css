@@ -40,3 +40,13 @@ body {
     background-color: goldenrod;
     padding: 0.5rem;
 }
+
+/************* ROW TOP ****************/
+.row-top {
+    margin-bottom: 1rem;
+}
+
+/************** ROW BOTTOM ****************/
+.row-bottom .box {
+    padding: 1rem;
+}
