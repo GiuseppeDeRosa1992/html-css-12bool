@@ -12,3 +12,31 @@ body {
 }
 
 /**************** CSS UTILI *****************/
+.container-fluid {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex: 0 0 auto;
+}
+
+[class*="col-"] {
+    text-align: center;
+    padding: 0.1rem;
+}
+
+.box {
+    background-color: blueviolet;
+    padding: 0.5rem;
+}
+
+.nested {
+    background-color: goldenrod;
+    padding: 0.5rem;
+}
