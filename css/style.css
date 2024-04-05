@@ -50,3 +50,12 @@ body {
 .row-bottom .box {
     padding: 1rem;
 }
+
+/*************** OFFSET ***************/
+.container-fluid.offset {
+    margin-top: 1rem;
+}
+
+.offset .box {
+    padding: 1rem;
+}
