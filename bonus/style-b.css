@@ -1,0 +1,162 @@
+/****** CSS RESET ******/
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: black;
+    color: white;
+}
+
+/**************** CSS UTILI *****************/
+.container {
+    max-width: 1000px;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: gray;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.ai-center {
+    align-items: center;
+}
+
+.p-relative {
+    position: relative;
+}
+
+.grandstand-top,
+.grandstand-bottom,
+.playing-field {
+    text-align: center;
+}
+
+.grandstand-bottom .col-xs-10,
+.grandstand-top .col-xs-10 {
+    background-color: rgb(9, 207, 207);
+    height: 10vh;
+    line-height: 10vh;
+}
+
+.playing-field {
+    height: 80vh;
+}
+
+.playing-field .col-xs-1 {
+    background-color: rgb(9, 207, 207);
+    height: 10vh;
+}
+
+.playing-field .col-xs-10 {
+    background-color: green;
+    height: 10vh;
+}
+
+.playing-field .l-green {
+    background-color: lightgreen;
+}
+
+.square {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 2px solid white;
+    position: absolute;
+}
+
+.square.top-left {
+    top: 0;
+    left: 8.2%;
+}
+
+.square.top-right {
+    top: 0;
+    left: 90.2%;
+}
+
+.square.bottom-left {
+    bottom: 0;
+    left: 8.2%;
+}
+
+.square.bottom-right {
+    bottom: 0;
+    left: 90.2%;
+}
+
+.square.top-left > i {
+    position: absolute;
+    bottom: 10px;
+    left: -14px;
+    transform: rotateY(180deg);
+}
+
+.square.top-right > i {
+    position: absolute;
+    bottom: 10px;
+    right: -14px;
+}
+
+.square.bottom-left > i {
+    position: absolute;
+    bottom: -15px;
+    left: -14px;
+    transform: rotateZ(180deg);
+}
+
+.square.bottom-right > i {
+    position: absolute;
+    bottom: -15px;
+    left: 10px;
+    transform: rotateX(180deg);
+}
+
+.playing-field::before {
+    font-family: "FontAwesome";
+    content: "\f1e3";
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    bottom: 36.5%;
+    left: 50%;
+    border: 1px solid white;
+    transform: translate(-50%, -50%);
+}
+
+.football-door {
+    width: 40px;
+    height: 100px;
+    position: absolute;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+}
+
+.football-door.f-d-left {
+    top: 43%;
+    left: 8%;
+    border-right: 3px solid white;
+}
+
+.football-door.f-d-right {
+    top: 43%;
+    left: 88%;
+    border-left: 3px solid white;
+}
